@@ -14,8 +14,8 @@
         <div class="container"></div>
         <div class="content">
             <div class="text">
-                <div class="date">28-12-2024</div>
-                <div class="city">Marrakech</div>
+                <div class="date" id="date">28-12-2024</div>
+                <div class="city" id="city">Marrakech</div>
             </div>
             <div class="table">
                 <table>
@@ -29,7 +29,7 @@
                         <th>Isha</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="body-row">
                       <tr>
                         <td>Prayer Time</td>
                         <td>5:00 AM</td>
@@ -41,14 +41,28 @@
                     </tbody>
                 </table> 
             </div>
-            <div class="info">
+            <!-- <div class="info">
                 1:20:15 to next prayer
+            </div> -->
+            <div class="infos">
+                <select id="cityDropdown">
+                    <option value="paris" data-country-code="FR" data-city-name="Paris">Paris</option>
+                    <option value="newyork" data-country-code="US" data-city-name="New York">New York</option>
+                    <option value="tokyo" data-country-code="JP" data-city-name="Tokyo">Tokyo</option>
+                    <option value="london" data-country-code="GB" data-city-name="London">London</option>
+                    <option value="marrakech" data-country-code="MA" data-city-name="Marrakech" selected>Marrakech</option>
+                    <option value="sydney" data-country-code="AU" data-city-name="Sydney">Sydney</option>
+                    <option value="cairo" data-country-code="EG" data-city-name="Cairo">Cairo</option>
+                    <option value="dubai" data-country-code="AE" data-city-name="Dubai">Dubai</option>
+                    <option value="berlin" data-country-code="DE" data-city-name="Berlin">Berlin</option>
+                    <option value="toronto" data-country-code="CA" data-city-name="Toronto">Toronto</option>
+                  </select>
             </div>
         </div>
         
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

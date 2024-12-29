@@ -59,7 +59,7 @@ table {
   .header-row {
     font-weight: bold;
   }
-  .content .info{
+  /* .content .info{
     width: fit-content;
     background-color: #7D6902;
     padding: 15px 30px;
@@ -67,4 +67,23 @@ table {
     margin: 20px auto;
     border-radius: 10px;
     font-size: 22px;
+  } */
+  .content .infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .infos select{
+    width: fit-content;
+    background-color: #7D6902;
+    padding: 15px 30px;
+    color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Oleo Script", serif;
+  }
+  .content .infos select option {
+    font-family: "Noto Sans Arabic", serif;  /* Change the font for options */
+    font-size: 14px;  /* Adjust font size */
   }
